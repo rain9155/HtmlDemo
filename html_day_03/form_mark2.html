@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>文件选择</title>
+	</head>
+	<body>
+		<!--
+			属性：
+			enctype 提交内容的编码方式
+					值：		
+					application/x-www-form-urlencoded 默认值，使用URL编码方式对内容进行编码。传输的内容是键值对的方式
+					multipart/form-data 在上传文件时必须使用的编码类型。以二进制的方式对内容进行编码传输，具体方式不再这里细述。
+					text/plain 以纯文本的方式上传表单的内容数据
+		-->
+		<form action="" method="post" enctype="multipart/form-data">
+			选择头像：&nbsp;
+			<input type="file" name="heading"/>
+			<input type="submit" value="提交"/>
+		</form>
+	</body>
+</html>

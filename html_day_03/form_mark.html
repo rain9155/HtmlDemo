@@ -20,7 +20,6 @@
 				type 输入的类型
 					 text 文本
 					 passwork 密码
-					 submit 提交按钮
 					 ...
 				name 名称，提交数据时，服务器识别的名称。
 				value 值，通过value属性设置或者获取默认输入组件的值
@@ -33,25 +32,51 @@
 				密&nbsp;码：&nbsp;<input  type="password" name="passwork" value="passwork" />
 			</p>
 			<p>
-				<input type="submit"/>
-			</p>
-			<p>
 				<!--
 					实现单选按钮，name必须相同
 					属性：
 					 checked 默认是否选中
 				-->
 				单选按钮：
-				<input type="radio" name="单选" value="" checked="checked"/>男
-				<input type="radio" name="单选" value=""/>女
+				<input type="radio" name="单选" value="男" checked="checked"/>男
+				<input type="radio" name="单选" value="女"/>女
 			</p>
 			<p>
 				<!--
 					实现多选按钮
 				-->
-				<input type="checkbox" name="" value="你好" checked="checked"/>多选1
-				<input type="checkbox" name="" value=""/>多选2
-				<input type="checkbox" name="" value=""/>多选3
+				爱好:&nbsp;
+				<input type="checkbox" name="多选1" value="唱歌" checked="checked"/>唱歌
+				<input type="checkbox" name="多选2" value="跳舞"/>跳舞
+				<input type="checkbox" name="多选3" value="美女"/>美女
+			</p>	
+			<p>
+				<!--
+					select - option 选择列表 ,以下拉列表的方式展现数据，用户可以选择其中展现
+								出来的某一个选项作为输入值
+				-->
+				省份：&nbsp;
+				<select name="省份">
+					<option value="">待定</option>
+					<option value="sicuan">四川</option>
+					<option value="guangzhou">广州</option>
+					<option value="zhaoqing">肇庆</option>
+				</select>
+			</p>
+			<p>
+				<!--
+					实现颜色选择器
+				-->
+				颜色选择：&nbsp;
+				<input type="color" name="background"/>
+			</p>
+			<p>
+				<!--
+					各种按钮实现
+				-->
+				<input type="submit" value="提交"/>
+				<input type="reset" value="重置" />
+				<input type="button" value="普通按钮"/>
 			</p>
 		</form>
 	</body>
