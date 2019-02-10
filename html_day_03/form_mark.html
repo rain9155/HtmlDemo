@@ -23,10 +23,9 @@
 					 ...
 				name 名称，提交数据时，服务器识别的名称。
 				value 值，通过value属性设置或者获取默认输入组件的值
-				
 			-->
 			<p>
-				用户名：&nbsp;<input  type="text" name="name" value="name" />
+				用户名：&nbsp;<input name="name" value="name" />
 			</p>
 			<p>
 				密&nbsp;码：&nbsp;<input  type="password" name="passwork" value="passwork" />
@@ -52,19 +51,6 @@
 			</p>	
 			<p>
 				<!--
-					select - option 选择列表 ,以下拉列表的方式展现数据，用户可以选择其中展现
-								出来的某一个选项作为输入值
-				-->
-				省份：&nbsp;
-				<select name="省份">
-					<option value="">待定</option>
-					<option value="sicuan">四川</option>
-					<option value="guangzhou">广州</option>
-					<option value="zhaoqing">肇庆</option>
-				</select>
-			</p>
-			<p>
-				<!--
 					实现颜色选择器
 				-->
 				颜色选择：&nbsp;
@@ -77,6 +63,76 @@
 				<input type="submit" value="提交"/>
 				<input type="reset" value="重置" />
 				<input type="button" value="普通按钮"/>
+			</p>
+			<p>
+				<!--
+					滑块选择, max和民控制范围
+				-->
+				<input type="range" max="1000" min="0" name="range"/>
+			</p>
+			<p>
+				<!--
+					日期选择
+				-->
+				<input type="week" name="week"/>
+				<input type="time" name="time"/>
+			</p>
+			<p>
+				<!--
+					select - option 选择列表 ,以下拉列表的方式展现数据，用户可以选择其中展现
+								出来的某一个选项作为输入值
+				-->
+				省份：&nbsp;
+				<select name="省份">
+					<option value="">待定</option>
+					<option value="sicuan">四川</option>
+					<option value="guangzhou">广州</option>
+					<option value="zhaoqing">肇庆</option>
+				</select>
+			</p>
+			
+			<p>
+				<!--
+					textarea 文本域，在页面中展示多行多列的文本框，
+							   可以通过其rows与 cols属性来控制文本域的大小。
+				-->
+				文本域：<br/>
+				<textarea name="textarea" cols="40" rows="4"></textarea>
+			</p>
+			<p>
+				<!--
+					required 表示强制用户输入
+					placeholder 提示，占位符
+				-->
+				<input type="text" name="text" required="请输入文字" placeholder="陈健宇"/>
+			</p>
+			<p>
+				<!--
+					readonly 只读属性
+				-->
+				<textarea readonly="textarea"  cols="40" rows="4" >
+					只读内容
+				</textarea>
+			</p>
+			<!--
+				
+				hidden 隐藏表单域， 不显示在界面组件，提交时显示数据
+			-->
+			<input type="hidden" name="hidden" value="123"/>
+			<p>
+				<!--
+					datalist 内容列表标签,带历史记录功能
+				-->
+				姓名:
+				<datalist id="datalist">
+					<option label="jinayu" value="jianyu"></option>
+					<option label="rain" value="rain"></option>
+				</datalist>
+				<!--
+					list 指定内容列表标签id
+				-->
+				<input type="text" name="name" list="datalist"/>
+				
 			</p>
 		</form>
 	</body>
