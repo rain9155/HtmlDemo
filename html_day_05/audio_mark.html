@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>音频标签</title>
+	</head>
+	<body>
+		<p>
+			<!--
+				audio 音频标签   使用该标签可以在页面上播放音乐
+				属性：
+				autoplay 自动播放,如果出现该属性，则音频在就绪后马上播放。
+				src      音频地址,要播放的音频的 URL。
+			-->
+			<audio autoplay="autoplay" src="audios/金玟岐 - 岁月神偷.mp3"></audio>
+		</p>
+		<p>
+			<!--
+				controls 操作组件,如果出现该属性，则向用户显示控件，比如播放按钮。
+			-->
+			<audio controls="controls" src="audios/金玟岐 - 岁月神偷.mp3"></audio>
+		</p>
+		<p>
+			<!--
+				loop 循环播放,如果出现该属性，则每当音频结束时重新开始播放。
+				preload 预加载，如果出现该属性，则音频在页面加载时进行加载，并预备播放。如果使用 "autoplay"，则忽略该属性。
+			-->
+			<audio  loop="loop" controls="controls"  preload="auto" src="audios/金玟岐 - 岁月神偷.mp3"></audio>
+		</p>
+	</body>
+</html>
