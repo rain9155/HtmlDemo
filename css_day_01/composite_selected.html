@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS复合选择器</title>
+		<style type="text/css">
+			/* 1、交集选择器 , 例如这里li标签和class值为class的交集*/
+			li.class{
+				background: green;
+			}
+			/* 2、并集选择器，例如这里li标签和class值为class的并集 */
+			li,.class{
+				background: yellow;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<ul>
+			<li class="class">仙剑奇侠传1</li>
+			<li class="class">仙剑奇侠传2</li>
+			<li class="class2">仙剑奇侠传3</li>
+			<li>仙剑奇侠传4</li>
+		</ul>
+		<p class="class">这里没有仙剑奇侠传</p>
+	</body>
+</html>

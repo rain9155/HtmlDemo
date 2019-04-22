@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css基本选择器</title>
+		<style>
+			/* 1、标签选择器 ，对html标签进行修饰 */
+			h1{
+				font-family: "eras demi itc";
+				color: blue;
+			}
+			
+			/* 2、id选择器,选择网页中标注了id的属性进行修饰，每个id只能使用一次 */
+			#id1{
+				color: bisque;
+			}
+			
+			#id2{
+				color: aqua;
+			}
+			/* 3、类选择器 , 在同一个页面中可多次使用*/
+			.class1{
+				color: #0000FF
+			}
+			.class1{
+				color: #00FFFF
+			}
+			/* 基本选择器的优先级 
+			 * id选择器  > 类选择器 > 标签选择器
+			 */
+			
+		</style>
+	</head>
+	<body>
+		<h1>标题1</h1>
+		<p id="id1">androidx.lifecycle 2.1.0-alpha02 is released.</p>
+		<h1>标题2</h1>
+		<p id="id2">Fixed an issue where mock ViewModel instances would crash when the containing ViewModelStore was cleared. b/122273087</p>
+		<h1>标题3</h1>
+		<div class="class1">陈健宇</div>
+	</body>
+</html>
