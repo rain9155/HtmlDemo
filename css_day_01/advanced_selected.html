@@ -2,9 +2,44 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>高级选择器，最常用</title>
-	</head>
+		<title>高级选择器-层次选择器</title>
+		<style>
+			/* 后代选择器 */
+			/*body p{
+				background: aquamarine;
+			}*/
+			
+			/* 子代选择器 */
+			/*body > p{
+				background: aqua;
+			}*/
+			
+			/* 相邻兄弟选择器，active表示某个标签的class属性的值 */
+			/*.active + p{
+				background: aliceblue;
+			}*/
+			
+			/* 通用兄弟选择器 */
+			.active ~ p{
+				background:  bisque;
+			}
+			
+		</style>
+	</head> 
 	<body>
-		
+		<p class="active">曹操</p>
+		<p>诸葛亮</p>
+		<p>孙权</p>
+		<ul>
+			<li>
+				<p>郭靖</p>
+			</li>
+			<li>
+				<p>杨过</p>
+			</li>
+			<li>
+				<p>小龙女</p>
+			</li>
+		</ul>
 	</body>
 </html>

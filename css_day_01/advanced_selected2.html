@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>高级选择器-结构伪类选择器</title>
+		<style>
+			
+			/* 结构伪类选择器需要配合层次选择器使用 */
+			
+			/* 第一种方式，匹配父元素中第n个子元素标签 */
+			/* 匹配ul所有li后代中的第一个li */
+			ul li:first-child{
+				background: #0000FF;
+			}
+			/* 匹配ul所有li后代中的最后一个li */
+			ul li:last-child{
+				background: #008000;
+			}
+			/* 匹配ul所有li后代中的第二个li */
+			ul li:nth-child(2){
+				background: yellow;
+			}
+			
+			/* 第二种方式，先匹配标签类型，再匹配父元素中第n个子元素标签 */
+			/* 匹配body所有p标签中的第一个p */
+			body > p:first-of-type{
+				background: #FFFF00;
+			}
+			/* 匹配body所有p标签中的最后一个p */
+			body > p:last-of-type{
+				background: #FFFF00;
+			}
+			/* 匹配body所有p标签中的第二个p */
+			body > P:nth-of-type(2){
+				background: black;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<p class="active">曹操</p>
+		<p>诸葛亮</p>
+		<p>孙权</p>
+		<ul>
+			<li>
+				<p>郭靖</p>
+			</li>
+			<li>
+				<p>杨过</p>
+			</li>
+			<li>
+				<p>小龙女</p>
+			</li>
+		</ul>
+	</body>
+</html>
